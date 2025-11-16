@@ -2,7 +2,7 @@
 var acertos=0;
 var errados=0;
 var perdidos=0;
-var janela=200; //ms
+var janela=100; //ms
 var intervalo=500; //ms
 var timer = null;
 var jogoAtivo=false;
@@ -109,6 +109,7 @@ function restart(){
     location.reload();
 
 }
+
 
 
 
