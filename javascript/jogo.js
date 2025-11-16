@@ -2,8 +2,8 @@
 var acertos=0;
 var errados=0;
 var perdidos=0;
-var janela=1000; //2000ms, ou 2s
-var intervalo=5000; //5000ms, ou 5s
+var janela=900; //ms
+var intervalo=2000; //ms
 var timer = null;
 var jogoAtivo=false;
 
@@ -107,4 +107,5 @@ function martelada(evento){
 function restart(){
     jogoAtivo=false;
     location.reload();
+
 }
