@@ -1,0 +1,250 @@
+body {
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+
+.banner {
+    height: 100vh;
+    padding: 0;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nextPage {
+    position: fixed; /*fixo*/
+    bottom: 10px; /*distancia do lado esquerdo*/
+    right: 10px; /*distancia do lado direito*/
+    display: flex; /*deixar alinhadovertical/horizontal*/
+    align-items: center; /*alinhado na vertical*/
+    justify-content: center; /*alinhado na horizontal*/
+    z-index: 3;
+}
+
+.previousPage {
+    position: fixed; /*fixo*/
+    top: 10px; /*distancia do lado esquerdo*/
+    left: 10px; /*distancia do lado direito*/
+    display: flex; /*deixar alinhadovertical/horizontal*/
+    align-items: center; /*alinhado na vertical*/
+    justify-content: center; /*alinhado na horizontal*/
+    z-index: 3;
+}
+
+.circulo {
+    background-color: #c4c4c4;
+    border-radius: 50%; /*para círculo*/
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.regras {
+    background-color: #c4c4c4;
+    height: 100vh;
+    display: flex;
+}
+
+.regras .contentBox {
+    background-color: #d4d4d4;
+    width: 100%;
+    padding: 50px
+}
+
+.regras .imgBox {
+    background: url(../images/Mole.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+.regras h2, h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.tabuleiro {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #b8ffb8;
+}
+
+.gramado {
+    width: 650px;
+    height: 450px;
+    border: #008000;
+    border-radius: 25%;
+    background-color: #27c027;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: url(../images/hammer.png);
+    padding: 10px;
+}
+
+.gramado img {
+    padding: 25px 50px 25px 50px;
+    box-sizing: content-box;
+    width: 80px;
+    height: 80px;
+}
+
+.pontos {
+    width: 536px;
+    height: 536px;
+    justify-content: center;
+    display: flex;
+}
+
+.tabuleiro td,th {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+
+}
+
+#start, #restart {
+    width: 100%;
+    font-size: 25px;
+    border: 3px solid;
+    border-color: #008000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.records {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.records {
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.records th {
+     font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: aliceblue;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.records td {
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.records tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.records td:first-child, td:nth-child(even) {
+    text-align: left;
+}
+
+.records td:first-child, td:nth-child(3) {
+    text-align: right;
+}
+
+
+@media(max-width: 991px){
+.regras {
+    flex-direction: column;
+}
+
+.regras .contentBox {
+    width: unset;
+}
+
+.regras .imgBox {
+    height: 100%;
+}
+
+.tabuleiro {
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+.pontos {
+    padding-bottom: 100px;
+}
+
+.pontos th {
+    font-size: 30px;
+}
+
+.pontos td:first-child {
+    font-size: 20px;
+}
+
+.gramado {
+    width: 400px;
+    height: 400px;
+}
+
+.pontos {
+    width: 400px;
+    height: 400px;
+}
+
+.gramado img {
+    padding: 10px 50px 10px 50px;
+}
+
+.record tr th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.records th {
+    font-size: 18px;
+}
+
+.records td {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+#start, #restart {
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid;
+    border-color: #008000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+}   

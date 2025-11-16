@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+    <title>Tabuleiro</title>
+</head>
+<header id="header-tabuleiro">
+    <div class="previousPage">
+        <a href="regras.html" class="circulo">
+            <img src="images/arrow-up.png" alt="seta para cima" class="arrow">
+        </a>
+    </div>
+</header>
+<body>
+    <section class="tabuleiro" id="tabuleiro">
+        <div class="gramado" id="idGramado">
+            <img src="images/hole.png" alt="buraco vazio" id="buraco0">
+            <img src="images/hole.png" alt="buraco vazio" id="buraco1">
+            <img src="images/hole.png" alt="buraco vazio" id="buraco2">
+            <img src="images/hole.png" alt="buraco vazio" id="buraco3">
+            <img src="images/hole.png" alt="buraco vazio" id="buraco4">
+        </div>
+
+        <div class="pontos">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Pontuação</th>
+                    </tr> <!--colspan para mesclar-->
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acertos:</td>
+                        <td class="pontuacao" id="acertos">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Perdidos:</td>
+                        <td class="pontuacao" id="perdidos">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Errados:</td>
+                        <td class="pontuacao" id="errados">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saldo:</td>
+                        <td class="pontuacao" id="saldo">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                            <img src="images/caractere_0.gif" alt="0">
+                        </td>
+                    </tr>
+                    <tr>                                           
+                        <td colspan="2">
+                            <button id="start" class="btn btn-light">Start</button>
+                            <button id="restart" class="btn btn-light">Recomeçar</button>
+                    </tr>          
+                </tbody>    
+            </table>
+        </div>
+    </section>
+    <footer id="footer-tabuleiro">
+        <div class="nextPage">
+            <a href="recordes.html" class="circulo">
+                <img src="images/arrow-down.png" alt="seta para baixo" class="arrow">
+            </a>
+        </div>
+    </footer>
+    <script src="javascript/jogo.js"></script> 
+</body>
+</html>
